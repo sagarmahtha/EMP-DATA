@@ -116,9 +116,9 @@ form.addEventListener('submit', (event) => {
   } else {
     const dobDate = new Date(dobVal);
     const today = new Date();
-    const minAgeDate = new Date(today.getFullYear() - 21, today.getMonth(), today.getDate());
+    const minAgeDate = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
     if (dobDate > minAgeDate) {
-      setError(dobInput, 'You must be at least 21 years old.');
+      setError(dobInput, 'You must be at least 18 years old.');
       hasErrors = true;
     }
   }
